@@ -11,13 +11,22 @@ body{
   align-items: center;
   min-width: 100vh;
   position: relative;
+  background: url('https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 .container {
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 10px;
   transition:all 0.5s;
+  background-color: aliceblue;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 #secondcontainer{
   display: flex;
