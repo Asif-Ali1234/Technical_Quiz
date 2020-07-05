@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: floralwhite;
+}
+
+.container {
+  width: 750px;
+  height: 600px;
+  padding: 30px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+.container h2 {
+  text-align: center;
+  color: chocolate;
+}
+.container h6{
+    text-align: end;
+    color: darkcyan;
+    position: relative;
+    left: -10px;
+}
+
+.container .instructions {
+  font-size: 16px;
+  color: darkgrey;
+}
+
+.container .instructions p {
+  font-size: 20px;
+  color: coral;
+}
+
+.container .row {
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.container .subjects {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ccccff;
+  border-radius: 10px;
+}
+
+.container .row .custom-control {
+  padding-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.container .row .custom-control label {
+  color: cadetblue;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+}
+
+.container .clearfix {
+  margin-bottom: 20px;
+}
+.container .clearfix .btn {
+  opacity: 0;
+  transition: all 0.5s;
+
+}
+.alert {
+  text-align: center;
+}
+
+
+@media (max-width:991px){
+    .container{
+        height: 100%;
+    }
+}

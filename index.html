@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Technical Quiz</title>
+</head>
+
+<body>
+    <div class="container" id="maincontainer">
+        <h2>Welcome To Technical Quiz</h2>
+        <h6>Powered by CodeLikeDev</h6>
+        <div class="row instructions">
+            <p>Instructions</p>
+            <ul>
+                <li>This Quiz Contains 20 Questions on the selected Languages</li>
+                <li>Each question in thi quiz carries 10 marks</li>
+                <li>You will be awarded 10 marks if your answer is correct</li>
+                <li>There is also be negative marking for wrong answered questions.5 marks will be deducted if your
+                    answer is wrong</li>
+                <li>Each question in the quiz has a particular time limit</li>
+                <li>Time limit differs for all the exams</li>
+            </ul>
+        </div>
+        <div class="row subjects">
+            <div class="custom-control custom-radio custom-control-inline enabled">
+                <input type="radio" class="custom-control-input " id="javascript" name="quizlanguage" required onclick="changename('Javascript')">
+                <label class="custom-control-label " for="javascript">Javascript</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline enabled">
+                <input type="radio" class="custom-control-input " id="python" name="quizlanguage" required onclick="changename('Python')">
+                <label class="custom-control-label" for="python">Python</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline disabled">
+                <input type="radio" class="custom-control-input " id="java" name="quizlanguage" required onclick="changename('Java')" disabled>
+                <label class="custom-control-label" for="java">Java</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline disabled">
+                <input type="radio" class="custom-control-input" id="sql" name="quizlanguage" required onclick="changename('SQL')" disabled>
+                <label class="custom-control-label" for="sql">SQL</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline disabled">
+                <input type="radio" class="custom-control-input" id="oops" name="quizlanguage" required onclick="changename('OOPS')" disabled>
+                <label class="custom-control-label" for="oops">OOPS</label>
+            </div>
+        </div>
+        <div class="clearfix">
+            <a href="#" onclick="loadanimation()" class="btn btn-outline-secondary float-right" id="exbtn">Start <span id="language"></span> Quiz</a>
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Remember </strong> to share this with your freinds
+        </div>
+    </div>
+    <script type="text/javascript" src="index_script.js"></script>
+</body>
+
+</html>

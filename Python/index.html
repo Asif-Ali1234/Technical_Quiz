@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz_styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>.Py Quiz</title>
+</head>
+<body onload="onloadfunction()">
+    <div class="container" id="maincontainer">
+        <div class="heading">
+            <h1>Python Technical Quiz</h1>
+            <p>Test Your Knowledge!!! Show Your Excellence</p>
+        </div>
+        <div class="clearfix hideatresults">
+            <div class="timedisplay float-right">
+                <span id="timer">TIMER</span>
+            </div>
+            <div class="marksdisplay float-left">
+                <span id="marks">0</span>
+                <p>Marks</p>
+            </div>
+        </div>
+        <div class="msgsdisplay">
+		    <p id="msgdisplay">Let's Rock The Quiz!!!  Choose Your Question number</p>
+        </div>
+        <div id="resultsdisplay">
+            <p id="total_questions">Total No Questions Given  :</p>
+            <p id="crct_questions">Correctly Answered   :</p>
+            <p id="wrng_questions">Wrong Questions    :</p>
+            <p id="na">Not Answered       :</p>
+            <p id="answrreqstd">Answer Requested    :</p>
+            <p id="timeup">Time up Questions    :</p>
+            <p id="finalmarks">Total No of Marks    :</p>
+            <p id="finalnote">fdffbdfdvds</p>
+        </div>
+        <div class="question_numbers hideatresults" id="qnumbers">
+            <table class="table table-hover" id="qtable">
+                <h3>Choose Question Number</h3>
+                <tr>
+                    <td id="q1"><a href="javascript:question(1)" >1</a></td> <td id="q2"><a href="javascript:question(2)" >2</a></td>
+                    <td id="q3"><a href="javascript:question(3)" >3</a></td> <td id="q4"><a href="javascript:question(4)" >4</a></td>
+                    <td id="q5"><a href="javascript:question(5)" >5</a></td> <td id="q6"><a href="javascript:question(6)" >6</a></td>
+                    <td id="q7"><a href="javascript:question(7)" >7</a></td> <td id="q8"><a href="javascript:question(8)" >8</a></td>
+                    <td id="q9"><a href="javascript:question(9)" >9</a></td> <td id="q10"><a href="javascript:question(10)" >10</a></td>
+                  </tr>
+                  <tr>
+                    <td id="q11"><a href="javascript:question(11)" >11</a></td> <td id="q12"><a href="javascript:question(12)" >12</a></td>
+                    <td id="q13"><a href="javascript:question(13)" >13</a></td> <td id="q14"><a href="javascript:question(14)" >14</a></td>
+                    <td id="q15"><a href="javascript:question(15)" >15</a></td> <td id="q16"><a href="javascript:question(16)" >16</a></td>
+                    <td id="q17"><a href="javascript:question(17)" >17</a></td> <td id="q18"><a href="javascript:question(18)" >18</a></td>
+                    <td id="q19"><a href="javascript:question(19)" >19</a></td> <td id="q20"><a href="javascript:question(20)" >20</a></td>
+                  </tr>
+            </table>
+        </div>
+        <div class="question_display hideatresults" id="questiondisplay">
+
+        </div>
+        <div class="clearfix hideatresults">
+            <button type="button" class="btn btn-outline-primary" id="submitbtn" onclick="checking()">Submit</button>
+            <button type="button" class="btn btn-outline-danger" onclick="revealanswer(true)" id="crctanswrbtn">Correct Answer</button>
+        </div>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Remember</strong> to share this quiz to your friends
+        </div>
+    </div>
+    <div class="container" id="secondcontainer">
+        <h3>Your Results are Being Calculated........<span id="sharesec"></span></h3>
+        <p>Please <strong>Remember</strong> to share this quiz to your friends</p>
+
+        <p>For more such Content FOLLOW us on Instagram</p>
+
+
+        <a href="https://www.instagram.com/codelikedev.py" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    </div>
+    <script type="text/javascript" src="quiz_script.js"></script>
+</body>
+</html>
